@@ -1,0 +1,42 @@
+header {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    padding: 20px;
+
+    
+    @media (max-width: $responsive-sm) {
+        transition: all .3s ease;
+        &.hide {
+            top: -80px;
+        }
+        &.show {
+            top: 0px;
+        }
+    }
+    .content {
+        @media (max-width: $responsive-sm) {
+
+            &__desktop {
+                display: none;
+            }
+
+            &__mobile {
+                display: flex;
+            }
+        }
+        @media (min-width: $responsive-sm) {
+            
+            &__desktop {
+                display: flex;
+            }
+
+            &__mobile {
+                display: none;
+            }
+        }
+    }
+}

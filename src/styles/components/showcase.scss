@@ -1,0 +1,23 @@
+.showcase {
+    @media (max-width: $responsive-sm) {
+        background-image: unset;
+        height: unset;
+        padding-bottom: 20px;
+
+        .pl-12 {
+            padding: 0;
+        }
+
+        .content > div > div.w--50 {
+            width: 100%;
+        }
+    }
+
+    background-color: $color-secondary;
+    background-image: url("../images/showcase.png");
+    background-size: cover;
+    background-position: top right;
+    background-repeat: no-repeat; 
+    height: 100vh;
+    max-height: 1080px;
+}

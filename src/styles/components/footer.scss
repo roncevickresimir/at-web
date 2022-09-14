@@ -1,0 +1,20 @@
+footer {
+    background-color: $grey;
+    margin: 60px 30px 30px;
+    border-radius: 20px;
+
+    @media (max-width: $responsive-sm) {
+        padding: 20px;
+
+        & div:first-of-type {
+            flex-wrap: wrap;
+            a {
+                width: calc(50% - $unit * 8);
+                margin-bottom: 12px;
+            }
+        }
+        & > .w--50 {
+            width: 100%;
+        }   
+    }
+}

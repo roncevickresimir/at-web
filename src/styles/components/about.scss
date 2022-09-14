@@ -1,0 +1,60 @@
+.about {
+    .content {
+
+        &__mobile {
+            img {
+                width: 50%;
+                max-width: unset;
+            }
+        }
+
+        @media (max-width: $responsive-sm) {
+            & > .text {
+                flex-wrap: wrap;
+                position: relative;
+
+                & > div {
+                    width: 100%;
+                    padding: 0;
+                }
+            }
+            
+            &__mobile {
+                display: flex;
+            }
+            &__desktop {
+                display: none;
+            }
+        }
+
+        
+        @media (min-width: $responsive-sm) {       
+            &__mobile {
+                display: none;
+            }
+            &__desktop {
+                display: unset;
+            }
+        }
+
+        .flex--col > .type {
+            @media (min-width: $responsive-sm) {
+                width: 80%;
+            }
+        }
+        
+        & > div:first-of-type {
+            @media (min-width: $responsive-sm) {
+                margin-bottom: -100px;
+            }
+            
+            @media (min-width: $responsive-xl) {
+                margin-bottom: -150px;
+            }
+            
+            @media (min-width: $responsive-xxl) {
+                margin-bottom: -350px;
+            }
+        }
+    }
+}

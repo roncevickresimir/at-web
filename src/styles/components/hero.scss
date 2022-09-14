@@ -1,0 +1,199 @@
+.hero {
+    height: 100vh;
+    max-height: 1080px;
+    display: flex;
+    align-items: center;        
+    background: linear-gradient($white 50%, $background-color);
+    overflow: hidden;
+
+    .content {
+        display: flex;
+        align-items: center;
+    }
+
+    &--text {
+        margin-top: -20px;
+        width: 100%;
+        height: auto;
+        position: relative;
+        z-index: 2;
+
+        .btn {
+            &--primary {
+                min-width: 168px;
+            }
+            &--ghost {
+                min-width: 173px;
+            }
+        }
+
+        div:nth-of-type(3) {
+            flex-wrap: wrap;
+            
+            @media (max-width: $responsive-sm) { 
+                .btn {
+                    margin-bottom: 15px;
+                    min-width: 100%;
+                    text-align: center;
+                }
+            }
+            @media (min-width: $responsive-sm) { 
+                flex-wrap: unset;
+            }
+        }
+        
+        @media (min-width: $responsive-sm) {
+            width: 350px;
+        }
+        
+        @media (min-width: $responsive-xl) {
+            margin-top: -20px;
+            width: 600px;
+        }
+    }
+
+    &--image {
+        position: absolute;
+    }
+    
+    @keyframes float {
+        0% {
+            transform: translatey(0px);
+        }
+        50% {
+            transform: translatey(-20px);
+        }
+        100% {
+            transform: translatey(0px);
+        }
+    }
+
+    @keyframes grow {
+        0% {
+            transform: scale(.95);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    
+    .image {
+        &-1 {
+            animation: float 1s ease;
+            
+            @media (max-width: $responsive-sm) {
+                top: 65px;
+                left: -57px;
+                width: 31.5%;
+
+                display: none;
+            }
+
+            @media (min-width: $responsive-sm) {
+                top: 100px;
+                left: -60px;
+                width: 12.5%;
+                display: unset;
+            }
+        }
+        &-2 {
+            animation: float 6s ease-in-out infinite;
+            
+            @media (max-width: $responsive-sm) {
+                top: 65px;
+                right: 70%;
+                width: 38.5%;
+            }
+            
+            @media (min-width: $responsive-sm) {
+                bottom: 50px;
+                left: 5%;
+                width: 12.5%;
+            }
+        }
+        &-3 {
+            animation: float 8s ease-in-out infinite;
+
+            @media (max-width: $responsive-sm) {
+                top: 111px;
+                right: -3%;
+                width: 42.5%;
+            }
+
+            @media (min-width: $responsive-sm) {
+                top: 50px;
+                left: 33%;
+                width: 25%;
+            }
+        }
+        &-4 {
+            animation: float 7s ease-in-out infinite;
+            @media (max-width: $responsive-sm) {
+                bottom: 50px;
+                left: -15%;
+                width: 46.5%;
+            }
+            
+            @media (min-width: $responsive-sm) {
+                bottom: 50px;
+                left: 35%;
+                width: 22.5%;
+            }
+        }
+        &-5 {
+            z-index: 1;
+            
+            animation: float 8s ease-in-out infinite;
+            @media (max-width: $responsive-sm) {
+                top: 71%;
+                right: -18%;
+                width: 40.5%;
+            }
+
+            @media (min-width: $responsive-sm) {
+                top: 125px;
+                right: 5%;
+                width: 22.5%;
+            }
+        }
+        &-6 {
+            animation: float 5.5s ease-in-out infinite;
+            @media (max-width: $responsive-sm) {
+                bottom: -20px;
+                left: 26%;
+                width: 23.5%;
+            }
+
+            @media (min-width: $responsive-sm) {
+                bottom: 50px;
+                right: 5%;
+                width: 12.5%;
+            }
+        }
+        &-big {
+            animation: grow 6s ease-in-out forwards;
+
+            @media (max-width: $responsive-sm) {
+                top: 75%;
+                right: -10%;
+                width: 70%;
+            }
+
+            @media (min-width: $responsive-sm) {
+                top: 25%;
+                right: 0%;
+                width: 50%;
+            }
+            @media (min-width: $responsive-md) {
+                top: 25%;
+                right: 0%;
+                width: 50%;
+            }
+            @media (min-width: $responsive-xl) {
+                top: 175px;
+                right: 15%;
+                width: 35%;
+            }
+        }
+    }
+}

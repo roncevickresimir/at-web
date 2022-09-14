@@ -1,0 +1,22 @@
+/*
+    components: layout
+*/
+
+$sidebar-width: 256px;
+$mobile-height: 50px;
+
+
+section {
+    padding: 0 20px;
+    @media (min-width: $responsive-sm) {
+      padding: 0 100px;
+    }
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 1920px;
+    margin: auto;
+}
