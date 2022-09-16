@@ -2,13 +2,13 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 
-import hero_1 from "../images/hero_1.svg"
-import hero_2 from "../images/hero_2.svg"
-import hero_3 from "../images/hero_3.svg"
-import hero_4 from "../images/hero_4.svg"
-import hero_5 from "../images/hero_5.svg"
-import hero_6 from "../images/hero_6.svg"
-import hero_big from "../images/hero_big.svg"
+import hero_1 from "../images/hero_1.png"
+import hero_2 from "../images/hero_2.png"
+import hero_3 from "../images/hero_3.png"
+import hero_4 from "../images/hero_4.png"
+import hero_5 from "../images/hero_5.png"
+import hero_6 from "../images/hero_6.png"
+import hero_big from "../images/hero_big.png"
 
 const Header = () => (
     <section className="hero">
