@@ -14,7 +14,7 @@ const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=de
 
 const IndexPage = () => (
   <Layout>
-    <Seo title="Home" />
+    <Seo title="Avantourist" />
     <Hero />
     <About />
     <Showcase />
@@ -22,6 +22,6 @@ const IndexPage = () => (
   </Layout>
 )
 
-export const Head = () => <Seo title="Home" />
+export const Head = () => <Seo title="Avantourist" />
 
 export default IndexPage
