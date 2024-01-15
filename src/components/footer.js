@@ -1,11 +1,10 @@
-import * as React from "react"
-import PropTypes from "prop-types"
-import { Link } from "gatsby"
+import * as React from "react";
+import { Link } from "gatsby";
 
-import facebook from "../images/facebook.svg"
-import instagram from "../images/instagram.svg"
+import facebook from "../images/facebook.svg";
+import instagram from "../images/instagram.svg";
 //import tiktok from "../images/tiktok.svg"
-import twitter from "../images/twitter.svg"
+import twitter from "../images/twitter.svg";
 
 const pages = [
   {
@@ -24,17 +23,17 @@ const pages = [
   //     path: "/contact",
   //     title: "Contact Us",
   //   },
-]
+];
 
 const Footer = () => (
   <footer className="flex flex--col flex--center flex--jc--space-between pt-16 pb-8">
     <div className="flex flex--center flex--jc--center w--100">
-      {pages.map(page => {
+      {pages.map((page) => {
         return (
           <Link to={page.path} className="mr-4">
             {page.title}
           </Link>
-        )
+        );
       })}
     </div>
 
@@ -57,6 +56,6 @@ const Footer = () => (
       © AvanTourist &middot; {new Date().getFullYear()}
     </div>
   </footer>
-)
+);
 
-export default Footer
+export default Footer;
